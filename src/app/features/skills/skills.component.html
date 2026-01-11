@@ -1,0 +1,21 @@
+<section class="skills-exp">
+
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <app-skill-card
+        *ngFor="let skill of skills"
+        [group]="skill">
+      </app-skill-card>
+    </div>
+  
+    <h2>Experience</h2>
+
+    <div class="timeline">
+      <app-experience-item
+        *ngFor="let exp of experiences"
+        [experience]="exp">
+      </app-experience-item>
+    </div>
+  
+  </section>
+  

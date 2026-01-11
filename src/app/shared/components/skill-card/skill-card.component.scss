@@ -1,0 +1,42 @@
+.skill-card {
+    background: rgba(18, 18, 18, 0.65);
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    padding: 2.2rem;
+    text-align: center;
+  
+    opacity: 0;
+    transform: translateY(24px);
+    animation: fadeUp 0.6s ease forwards;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  /* title */
+  h3 {
+    color: var(--accent-red);
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+  }
+  
+  /* pills */
+  .items span {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    margin: 0.4rem;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+  }
+  
+  /* animation */
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

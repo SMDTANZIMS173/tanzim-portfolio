@@ -1,0 +1,120 @@
+/* ---------- Hero Section ---------- */
+.hero {
+    min-height: 100vh;
+    padding: 8rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    opacity: 0;
+    animation: heroFade 0.9s ease-out forwards;
+  }
+  
+  /* ---------- Heading ---------- */
+  .hero h1 {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+  
+    opacity: 0;
+    transform: translateY(24px);
+    animation: textReveal 0.7s ease forwards;
+    animation-delay: 0.2s;
+  }
+  
+  .hero h1 span {
+    color: var(--accent-red);
+  }
+  
+  /* ---------- Paragraph ---------- */
+  .hero p {
+    max-width: 600px;
+    margin-top: 1.5rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  
+    opacity: 0;
+    transform: translateY(20px);
+    animation: textReveal 0.7s ease forwards;
+    animation-delay: 0.4s;
+  }
+  
+  /* ---------- CTA ---------- */
+  .cta {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+  
+    opacity: 0;
+    transform: translateY(20px);
+    animation: textReveal 0.7s ease forwards;
+    animation-delay: 0.6s;
+  }
+  
+  /* ---------- Buttons ---------- */
+  button {
+    padding: 0.75rem 1.6rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      background 0.25s ease,
+      color 0.25s ease;
+  }
+  
+  .primary {
+    background: var(--accent-red);
+    color: #fff;
+    border: none;
+  }
+  
+  .primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(229, 9, 20, 0.4);
+  }
+  
+  .secondary {
+    background: transparent;
+    color: #fff;
+    border: 1px solid var(--text-muted);
+  }
+  
+  .secondary:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-red);
+    color: var(--accent-red);
+  }
+  
+  /* ---------- Animations ---------- */
+  @keyframes heroFade {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes textReveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ---------- Responsive ---------- */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 6rem 2.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 5rem 1.5rem;
+    }
+  }
+  

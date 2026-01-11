@@ -1,0 +1,25 @@
+<div class="card">
+    <h3>{{ project.title }}</h3>
+  
+    <p class="desc">{{ project.description }}</p>
+  
+    <div class="tech">
+      <span *ngFor="let tech of project.techStack">{{ tech }}</span>
+    </div>
+  
+    <ul>
+      <li *ngFor="let point of project.highlights">
+        {{ point }}
+      </li>
+    </ul>
+  
+    <div class="links">
+      <a *ngIf="project.githubLink" [href]="project.githubLink" target="_blank">
+        GitHub
+      </a>
+      <a *ngIf="project.liveLink" [href]="project.liveLink" target="_blank">
+        Live
+      </a>
+    </div>
+  </div>
+  

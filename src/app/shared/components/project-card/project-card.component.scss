@@ -1,0 +1,46 @@
+.card {
+    background: rgba(20, 20, 20, 0.7);
+    backdrop-filter: blur(14px);
+    border-radius: 10px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  }
+  
+  h3 {
+    color: var(--accent-red);
+    margin-bottom: 0.5rem;
+  }
+  
+  .desc {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+  
+  .tech span {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 0.75rem;
+    color: #fff;
+    opacity: 0.8;
+  }
+  
+  ul {
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  
+  .links {
+    margin-top: 1.5rem;
+  }
+  
+  .links a {
+    margin-right: 1rem;
+    color: var(--accent-red);
+    text-decoration: none;
+  }
+  

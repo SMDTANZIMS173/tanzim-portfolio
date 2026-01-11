@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --bg-main: #0b0b0b;
+    --bg-surface: #141414;
+    --text-primary: #ffffff;
+    --text-muted: #b3b3b3;
+    --accent-red: #e50914;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+  }
+  

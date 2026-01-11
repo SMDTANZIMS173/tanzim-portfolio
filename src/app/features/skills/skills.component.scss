@@ -1,0 +1,21 @@
+.skills-exp {
+    max-width: 1200px;
+    margin: 0 auto;          /* 🔥 CENTER EVERYTHING */
+    padding: 6rem 2rem;
+  }
+  
+  /* ---------- Section Titles ---------- */
+  h2 {
+    font-size: clamp(2rem, 3vw, 2.3rem);
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  /* ---------- SKILLS ---------- */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-bottom: 6rem;
+  }
+  

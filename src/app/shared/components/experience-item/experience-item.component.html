@@ -1,0 +1,18 @@
+<div class="exp-item">
+    <div class="dot"></div>
+  
+    <div class="content">
+      <h3>{{ experience.role }}</h3>
+  
+      <p class="meta">
+        {{ experience.company }} • {{ experience.period }}
+      </p>
+  
+      <ul>
+        <li *ngFor="let point of experience.points">
+          {{ point }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  

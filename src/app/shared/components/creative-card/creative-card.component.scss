@@ -1,0 +1,35 @@
+.creative-card {
+    background: rgba(18, 18, 18, 0.6);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+  
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .creative-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+  
+  .image-placeholder {
+    height: 160px;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(
+      135deg,
+      rgba(229, 9, 20, 0.15),
+      rgba(255, 255, 255, 0.05)
+    );
+  }
+  
+  h3 {
+    margin-bottom: 0.6rem;
+  }
+  
+  p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+  

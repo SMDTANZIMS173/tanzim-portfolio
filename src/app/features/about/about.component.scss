@@ -1,0 +1,117 @@
+/* ---------- Page Container ---------- */
+.about {
+    padding: 6rem;
+    max-width: 900px;
+    margin: 0 auto;
+  
+    /* page entrance animation */
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  /* ---------- Heading ---------- */
+  h2 {
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeIn 0.6s ease forwards;
+  }
+  
+  /* ---------- Intro Text ---------- */
+  .intro {
+    font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeIn 0.6s ease forwards;
+    animation-delay: 0.15s;
+  }
+  
+  /* ---------- Grid ---------- */
+  .highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* ---------- Cards ---------- */
+  .item {
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 2rem;
+    border-radius: 10px;
+  
+    /* animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardReveal 0.6s ease forwards;
+  
+    /* smooth hover */
+    transition:
+      transform 0.35s ease,
+      box-shadow 0.35s ease,
+      background 0.35s ease;
+  }
+  
+  /* stagger effect */
+  .item:nth-child(1) { animation-delay: 0.25s; }
+  .item:nth-child(2) { animation-delay: 0.4s; }
+  .item:nth-child(3) { animation-delay: 0.55s; }
+  
+  .item:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    background: rgba(25, 25, 25, 0.75);
+  }
+  
+  /* ---------- Card Titles ---------- */
+  .item h3 {
+    color: var(--accent-red);
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+  
+  /* ---------- Card Text ---------- */
+  .item p {
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+  
+  /* ---------- Animations ---------- */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes cardReveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ---------- Responsive Tweaks ---------- */
+  @media (max-width: 768px) {
+    .about {
+      padding: 4rem 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about {
+      padding: 3rem 1.5rem;
+    }
+  }
+  
