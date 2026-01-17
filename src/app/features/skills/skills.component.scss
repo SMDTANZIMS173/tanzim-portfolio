@@ -1,21 +1,30 @@
-.skills-exp {
-    max-width: 1200px;
-    margin: 0 auto;          /* 🔥 CENTER EVERYTHING */
-    padding: 6rem 2rem;
+/* EXPERIENCE GRID */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 items per row on desktop */
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+/* EXPERIENCE CARD STYLING */
+.experience-grid app-experience-item {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255,255,255,0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.experience-grid app-experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(229, 9, 20, 0.3);
+}
+
+/* RESPONSIVE: single column on smaller screens */
+@media (max-width: 768px) {
+  .experience-grid {
+    grid-template-columns: 1fr; /* 1 item per row */
+    gap: 1.5rem;
   }
-  
-  /* ---------- Section Titles ---------- */
-  h2 {
-    font-size: clamp(2rem, 3vw, 2.3rem);
-    margin-bottom: 3rem;
-    text-align: center;
-  }
-  
-  /* ---------- SKILLS ---------- */
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2rem;
-    margin-bottom: 6rem;
-  }
-  
+}

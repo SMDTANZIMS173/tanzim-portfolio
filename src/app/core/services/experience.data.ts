@@ -19,5 +19,26 @@ export const EXPERIENCES: Experience[] = [
       'Performed data analysis using Python and Pandas',
       'Worked with SQL and visualization tools'
     ]
+  },
+  {
+    role: 'Quality Management Representative (Analyst)',
+    company: 'EGSC-KSA | Riyadh, Saudi Arabia',
+    period: 'August 2024 - October 2024',
+    points: [
+      'Business Analysis',
+      'Vendor Registration',
+      'Working with applications like Zoho and Outlook for email advertising',
+      'Excel for ETL'
+    ]
+  },
+  {
+    role: 'IT Admin Analyst',
+    company: 'Avocado | Riyadh, Saudi Arabia',
+    period: 'June 2024 - August 2024',
+    points: [
+      'Worked with Backend Application team',
+      'Actively participated in company\'s diverse culture',
+      'Part of ICHO at King Saud University'
+    ]
   }
 ];
