@@ -6,9 +6,11 @@ export const EXPERIENCES: Experience[] = [
     company: 'Mphasis',
     period: 'Mar 2025 – Present',
     points: [
-      'Developing web applications using Angular and ASP.NET Core',
-      'Working with REST APIs and backend services',
-      'Contributing to AI-powered solutions including RAG chatbots'
+      'Building real-world banking applications using Angular and ASP.NET Core',
+'Working with APIs, backend systems, and financial data workflows',
+'Learning and applying Machine Learning for AI-assisted decision support systems',
+'Contributing to solutions that balance automation with human decision validation'
+
     ]
   },
   {
@@ -16,8 +18,11 @@ export const EXPERIENCES: Experience[] = [
     company: 'PW Skills',
     period: 'Oct 2024 – Jun 2025',
     points: [
-      'Performed data analysis using Python and Pandas',
-      'Worked with SQL and visualization tools'
+    'Performed data analysis using Python and Pandas for data processing and insights',
+'Worked with SQL and visualization tools for data querying and reporting',
+'Built an end-to-end Phishing URL Detection project using Machine Learning techniques',
+'Currently learning and applying Machine Learning concepts for real-world problem solving'
+
     ]
   },
   {

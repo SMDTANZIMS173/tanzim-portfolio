@@ -13,16 +13,32 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   }
   
-  .image-placeholder {
-    height: 160px;
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(
-      135deg,
-      rgba(229, 9, 20, 0.15),
-      rgba(255, 255, 255, 0.05)
-    );
+  .phone-frame {
+    width: 180px;
+    height: 360px;
+    margin: 0 auto 1.5rem auto;
+  
+    padding: 10px;
+    border-radius: 28px;
+  
+    background: #0a0a0a;
+    box-shadow: 
+      0 10px 25px rgba(0,0,0,0.6),
+      inset 0 0 6px rgba(255,255,255,0.05);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  
+  .phone-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   // VERY IMPORTANT
+    border-radius: 20px;
+  }
+  
+  
   
   h3 {
     margin-bottom: 0.6rem;
