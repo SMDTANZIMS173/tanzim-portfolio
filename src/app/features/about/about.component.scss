@@ -1,12 +1,13 @@
 /* ---------- Page Container ---------- */
 .about {
-    padding: 6rem;
-    max-width: 900px;
-    margin: 0 auto;
-  
-    /* page entrance animation */
-    animation: fadeInUp 0.8s ease-out forwards;
-  }
+  padding: 6rem;
+  padding-top: calc(6rem + 64px); // 🔥 adds header space
+  max-width: 900px;
+  margin: 0 auto;
+
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
   
   /* ---------- Heading ---------- */
   h2 {
